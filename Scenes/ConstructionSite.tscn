@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://buw48sjwbrtjg"]
+
+[ext_resource type="Texture2D" uid="uid://dglakvs8rplqg" path="res://icon.svg" id="1_webse"]
+
+[node name="ConstructionSite" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(394, 279)
+scale = Vector2(7.15625, 5.35938)
+texture = ExtResource("1_webse")
