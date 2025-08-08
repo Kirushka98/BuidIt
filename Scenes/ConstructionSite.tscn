@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://buw48sjwbrtjg"]
+
+[ext_resource type="Texture2D" uid="uid://dglakvs8rplqg" path="res://icon.svg" id="1_webse"]
+[ext_resource type="PackedScene" uid="uid://d20eg2curjh62" path="res://Scenes/Machine.tscn" id="2_k1bdw"]
+
+[node name="ConstructionSite" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(394, 279)
+scale = Vector2(7.15625, 5.35938)
+texture = ExtResource("1_webse")
+
+[node name="Machine" parent="." instance=ExtResource("2_k1bdw")]

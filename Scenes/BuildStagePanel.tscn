@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dhyb3dsksku2x"]
+
+[node name="BuildStagePanel" type="Control"]
+layout_mode = 3
+anchors_preset = 0

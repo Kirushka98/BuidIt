@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://d20eg2curjh62"]
+
+[ext_resource type="Script" uid="uid://di6xjvhq7prkk" path="res://Scenes/Machine.cs" id="1_ovuu0"]
+
+[node name="Machine" type="Node2D"]
+script = ExtResource("1_ovuu0")
+InventoryPath = NodePath("%Inventory")
+
+[node name="ProduceButton" type="Button" parent="."]
+offset_left = 68.0
+offset_top = 84.0
+offset_right = 166.0
+offset_bottom = 167.0
