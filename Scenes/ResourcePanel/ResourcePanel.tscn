@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://pfan5okt36rt"]
+
+[ext_resource type="Script" uid="uid://dwnqkyere8trk" path="res://Scripts/Scenes/ResourcePanel/ResourcePanel.cs" id="1_exxcv"]
+[ext_resource type="PackedScene" uid="uid://b14f7xx763828" path="res://Scenes/ResourcePanel/ResourceRow.tscn" id="2_y1c2u"]
+
+[node name="ResourcePanel" type="Control"]
+layout_mode = 3
+anchor_right = 0.13
+anchor_bottom = 0.127
+offset_left = 18.0
+offset_right = 0.23999
+offset_bottom = -0.296005
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(-16, 16)
+script = ExtResource("1_exxcv")
+ItemsRootPath = NodePath("Panel/MarginContainer/ScrollContainer/Items")
+RowScene = ExtResource("2_y1c2u")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.716
+anchor_bottom = 0.292
+offset_right = -125.997
+offset_bottom = 0.0357094
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 136.0
+offset_bottom = 40.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Items" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer"]
+layout_mode = 2

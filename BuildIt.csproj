@@ -3,4 +3,9 @@
     <TargetFramework>net8.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+        <DebugType>portable</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+        <Optimize>false</Optimize>
+    </PropertyGroup>
 </Project>
